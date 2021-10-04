@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="탈북청소년 교육지원센터" />
+    <link type="text/css" rel="stylesheet" href="/css/libs/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/slick.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/template12/libs/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/js/template12/libs/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/js/template12/libs/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/js/template12/libs/slick.min.js"></script>    
+    <script type="text/javascript" src="/js/template12/ui.js"></script>    
+    <!--[if lt IE 9]>
+        <script src="/js/template12/html5.js"></script>
+        <script src="/js/template12/respond.min.js"></script>
+    <![endif]-->
+    <title>탈북청소년 교육지원센터</title>
+    <script type="text/javascript">
+        $(function () {
+            //Responsive        
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Include -->
+    <section class="header-include"></section>    
+    <!-- Header Include -->
+
+    <!-- Container -->
+    <section id="container" class="main">
+        
+        <script type="text/javascript">
+            $(function () {
+                $(".main-visual-slider").slick({
+                    slide: "div", 
+                    infinite: true, 
+                    slidesToShow: 1, 
+                    slidesToScroll: 1, 
+                    speed: 2000, 
+                    arrows: true, 
+                    dots: true, 
+                    autoplay: false, 
+                    autoplaySpeed: 3000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                    pauseOnHover: true, 
+                    vertical: false, 
+                    prevArrow:
+                    "<button type='button' class='slide-btn prev' title='이전'>이전</button>", // 이전 화살표 모양 설정
+                    nextArrow:
+                    "<button type='button' class='slide-btn next' title='다음'>다음</button>", // 다음 화살표 모양 설정
+                    dotsClass: "slide-dots", 
+                    draggable: true,
+                });
+                // 재생 및 정지 버튼 클릭
+                $(".btn-autoplay").click(function () {
+                    var $sliderWrap = $(".main-visual-slider");
+        
+                    if ($sliderWrap.attr("data-slick-autoplay-status") == "Y") {
+                        $sliderWrap.attr("data-slick-autoplay-status", "N");
+                        $(this).text('정지');
+                    } else if ($sliderWrap.attr("data-slick-autoplay-status") == "N") {
+                        $sliderWrap.attr("data-slick-autoplay-status", "Y");
+                        $(this).text('재생');
+                    }
+                });
+            });
+        </script>
+    </section>
+    <!-- //Container -->
+
+    <!-- Footer Include -->
+    <section class="footer-include"></section>    
+    <!-- //Footer Include -->
+</body>
+
+</html>
