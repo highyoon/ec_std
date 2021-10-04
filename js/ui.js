@@ -28,6 +28,7 @@ $(function () {
     datepicker();  
     file_upload();
     family_site();
+    gnb_search();
 });
 
 
@@ -47,6 +48,13 @@ var gnb = function() {
             $('#header .bg_gnb').hide();
 		}
 	});
+}
+
+//GNB Search
+var gnb_search = function (){
+    $(document).on("click", ".gnb-search", function() {
+        $(this).toggleClass('active');
+    });
 }
 
 //All Menu 

@@ -56,51 +56,6 @@
     margin: 0 auto;
     height: 100px;
 }
-#header:after {
- content: "";
- display: block;
- clear: both;
- visibility: hidden;
-}
-#header h1 {
- float: left;
- margin: 24px 0 0;
-}
-#header .top-util {
- float: right;
- margin-top: 14px;
-}
-#header .top-util ul > li {
- display: inline-block;
-}
-#header .top-util ul > li > a {
- position: relative;
- margin-right: 6px;
- padding-left: 13px;
- font-size: 14px;
- text-transform: uppercase;
- transition: color 0.5s ease;
- color: #737373;
-}
-#header .top-util ul > li > a:before {
- content: "";
- display: block;
- position: absolute;
- left: 0;
- top: 12px;
- width: 2px;
- height: 2px;
- background-color: #bbb;
-}
-#header .top-util ul > li > a:hover {
- text-decoration: underline;
- transition: color 0.5s ease;
- color: #0779d1;
-}
-#header .top-util .find-idpw {
- max-width: auto;
- padding: 0;
-}
 #header .nav-link {
  position: relative;
  visibility: hidden;
@@ -149,12 +104,12 @@
 
 /* Navigation */
 #gnb {
- 
+    margin-left:16px;
 }
 #gnb > ul {
 }
 #gnb > ul > li {
- display: inline-block;
+ float: left;
  position: relative;
  width: 180px;
  text-align: center;
@@ -178,21 +133,35 @@
  position: absolute;
  left:0;
  top: 101px;
+ margin-top:-1px;
  min-width: 143px;
- min-height: 270px;
+ min-height: 271px;
  padding: 20px;
  text-align: left;
  font-size: 1.6rem;
+ border-top:1px solid #eff3f6;
  border-left: 1px solid #eff3f6;
  background:#fff;
  z-index: 2;
 }
-#gnb .active .depth2
-{
-    margin-top: -1px;
+#gnb .menu4 .depth2 {
+    border-right: 1px solid #eff3f6;
+}
+#gnb .active .depth2 {
+    /* margin-top: -1px;
     min-height: 269px;
-    border-top: 2px solid #2f8188;
+    border-top: 2px solid #2f8188; */
     background:#fafafa;
+}
+#gnb .active .depth2:after {
+    display: inline-block;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:2px;
+    background:#2f8188;
 }
 #gnb .depth2 > ul > li a {
  display: inline-block;
@@ -236,7 +205,33 @@
     z-index: 1;
 
 }
+.top-util {
+    margin-left:auto;
+}
+.top-util .gnb-search {
+    display: block;
+    width:50px;
+    height:50px;
+    background:url('/img/common/bg_sprite.png') no-repeat -72px 0;
+}
+.top-util .gnb-search.active {
+    background-position: -128px 0;
+}
+.top-util .search_box {
+    position: absolute;
+    top:160px;
+    left:50%;
+    padding:13px 20px;
+    width:100%;
+    max-width: 700px;
+    margin-left:-350px;
+    text-align: center;
+    border-bottom:2px solid #111;
+    box-sizing: border-box;
+}
+.top-util .search_box .input_search {
 
+}
 /* Contents */
 #container {
 }
