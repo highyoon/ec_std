@@ -40,12 +40,15 @@ var gnb = function() {
             $(this).addClass('active');
             $(this).siblings().removeClass('active');
 			$('#gnb .depth2').stop().show();
-            $('#header .bg_gnb').show();
+            $('#header .bg-gnb').addClass('down');
+            $('#header .gnb-search').removeClass('active');
+            $('#header .search-box').removeClass('on');
+            $('#header .bg-gnb').removeClass('search');
 		},
 		'mouseleave focusout': function(){
 			$(this).removeClass('active');
             $('#gnb .depth2').hide();
-            $('#header .bg_gnb').hide();
+            $('#header .bg-gnb').removeClass('down');
 		}
 	});
 }
@@ -54,6 +57,8 @@ var gnb = function() {
 var gnb_search = function (){
     $(document).on("click", ".gnb-search", function() {
         $(this).toggleClass('active');
+        $('#header .search-box').toggleClass('on');
+        $('#header .bg-gnb').toggleClass('search');
     });
 }
 

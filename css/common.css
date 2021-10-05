@@ -185,7 +185,10 @@ strong {
  clip: rect(1px, 1px, 1px, 1px);
  clip-path: inset(50%);
 }
-
+.txt-hide {
+    font-size:0;
+    text-indent: -9999em;
+}
 /* Grid System */
 .col-2 {
  width: 50%;
