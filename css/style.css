@@ -3,15 +3,15 @@
 @import url("reset.css");
 @import url("layout.css");
 @import url("common.css");
-@import url("style_mobile.css") screen and (max-width:1199px);
 @import url("style_pc.css") screen and (min-width:1200px);
+@import url("style_mobile.css") screen and (max-width:1199px);
 
 
 
 
 /* main */
 .main-slide {
-    background-size: cover;
+
 }
 
 .category {

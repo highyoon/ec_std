@@ -12,7 +12,50 @@
     background:url('/img/main/main_slide01.png') no-repeat center;
     background-size: cover;
 }
+.main-slide .visual-box {
+    padding:50px 0;
+}
+.main-slide .visual-box .visual-cont {
+    position: relative;
+    min-height: 530px;
+}
+.main-slide .visual-box .visual-cont .slide-img {
+    position:absolute;
+    top:0;
+    right: 0;
+}
+/* Arrows */
+.main-slide .visual-box .slick-prev,
+.main-slide .visual-box .slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin-top:-67px;
+    width: 34px;
+    height: 54px;
+    padding: 0;
 
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    background-image:url('/img/main/main_visual_arrow.png')
+}
+.main-slide .visual-box .slick-prev{
+    left: -5%;
+}
+.main-slide .visual-box .slick-next{
+    right: -5%;
+    background-position: top right;
+}
+.main-slide .visual-box button:hover {
+    background-position-y: bottom;
+}
 .category {
     padding:60px 0 80px;
 }
