@@ -3,8 +3,8 @@
 @import url("reset.css");
 @import url("layout.css");
 @import url("common.css");
-@import url("style_pc.css") screen and (min-width:1200px);
-@import url("style_mobile.css") screen and (max-width:1199px);
+@import url("style_pc.css") screen and (min-width:1025px);
+@import url("style_mobile.css") screen and (max-width:1024px);
 
 
 
@@ -21,9 +21,6 @@
     margin:0 auto;
 }
 .category .cate-wrap ul {
-    display: flex;
-    justify-content: space-between;
-    text-align:center;
 }
 .category .cate-wrap ul li {
     display: block;
@@ -81,13 +78,22 @@
 
 /* news */
 .news {
+   position: relative;
+}
+.news:after {
+    content: '';
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
     background:#fbfbfb;
+    z-index: -2;
 }
 .wrap {
     margin:0 auto;
 }
 .news .news-cont {
-    display: flex;
+    
 }
 .news .news-cont .news-list {
     display: inline-block;
@@ -98,6 +104,15 @@
 .news .news-cont .news-list .news-tit {
     color:#111;
     font-weight: 600;
+}
+
+.news .news-cont .news-list .news-tit .ico-new {
+    display:inline-block;
+    color:#fff;
+    border-radius: 50%;
+    font-weight: 400;
+    vertical-align: top;
+    background:#f16b60;
 }
 .news .news-cont .news-list .news-detail {
     color:#666;
@@ -110,12 +125,28 @@
 }
 
 .center-news {
-    background:#fef9e6;
+    background-color:#fef9e6;
 }
 .center-news .wrap {
 
 }
+.center-news .center-act {
 
+}
+.center-news .center-act .center-info {
+
+}
+.center-news .center-act .center-info .info-box {
+    overflow:hidden;
+    background: #fff;
+}
+.center-news .center-act .center-info .thumb img {
+    width: 100%;
+}
+.center-news .center-act .center-info .info-date {
+    text-align:right;
+    color:#666;
+}
 /* link text decoration */
 .link-deco {
     position: relative;
@@ -145,6 +176,12 @@ a.btn-ico, button.btn-ico, span.btn-ico {
     background:url('/img/common/bg_sprite.png') 0 0 no-repeat;
 }
 .btn-ico.main-more {margin-left:13px; background-position:-184px 0;}
+
+/* badge icon */
+.ico {
+    display: inline-block;
+    text-align:center;
+}
 
 @media screen and (max-height: 280px) {
  

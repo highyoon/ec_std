@@ -2,7 +2,47 @@
 
 img {width:100%;}
 
-#gnb {display:none;}
+/* dim */
+.dim {
+    display:none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+
+#gnb {
+    display:none;
+    position: fixed;
+    top:0;
+    right:0;
+    width:55%;
+    height: 100vh;
+    background:red;
+    border-radius: 2.5rem 0 0 2.5rem;
+    z-index:4;
+}
+#gnb > ul > li {
+    float:none;
+    width:100%;
+    border-bottom:1px solid #dedede;
+}
+#gnb > ul > li.active {
+    border-color:yellow;
+}
+#gnb > ul > li > a {
+    display: block;
+    padding: 20px 25px;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 /* main */
 .category .cate-wrap {

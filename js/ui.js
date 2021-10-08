@@ -136,7 +136,7 @@ var notify = function () {
 //Tabs
 var tabs = function () {
    $(".tab-cont > div").hide(); 
-   //$(".tab-nav li:first").addClass("active").show();
+   $(".tab-nav li:first").addClass("active").show();
    $(".tab-cont > div:first").show(); 
 
    $(".tab-nav li").each(function() {

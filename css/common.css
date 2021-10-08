@@ -2046,51 +2046,6 @@ h3 + .tbl-h {
  background: url(/images/bg_iconset.png) no-repeat 0 -259px;
 }
 
-/* Icon */
-.ico-file {
- display: inline-block;
- width: 14px;
- height: 16px;
- background: url(/images/bg_iconset.png) no-repeat -289px 0;
- text-indent: -9999em;
-}
-.ico-warning {
- display: inline-block;
- width: 22px;
- height: 22px;
- background: url(/images/bg_iconset.png) no-repeat -197px 0;
- text-indent: -9999em;
- vertical-align: top;
-}
-.ico-warning + span {
- display: inline-block;
- margin-left: 5px;
- color: #cd0000;
-}
-.ico-new {
- display: inline-block;
- width: 20px;
- height: 20px;
- background: url(/images/bg_iconset.png) no-repeat -304px 0;
- text-indent: -9999em;
-}
-.ico-lock {
- display: inline-block;
- width: 25px;
- height: 25px;
- background: url(/images/bg_iconset.png) no-repeat -325px 0;
- text-indent: -9999em;
-}
-.ico-check {
- display: inline-block;
- width: 18px;
- height: 13px;
- background: url(/images/bg_iconset.png) no-repeat -174px -54px;
- text-indent: -9999em;
-}
-h3 > .ico-check {
- margin-right: 5px;
-}
 
 /* Classify */
 .classify {
@@ -2143,16 +2098,6 @@ h3 > .ico-check {
  color: #111;
 }
 
-/* Info box */
-.info-box {
- padding: 30px;
- background-color: #fff5dc;
- border: 1px solid #f9e8bb;
- text-align: center;
-}
-.info-box.mbtype {
- margin-bottom: 50px;
-}
 
 /* Popup */
 .popup-box.lay {
