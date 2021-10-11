@@ -1163,7 +1163,7 @@ select {
  border: 1px solid #bbb;
  border-radius: 4px;
  background-color: #fff;
- background-image: url(/images/ico_select_arrow.png);
+/* background-image: url(/images/ico_select_arrow.png);*/
  background-repeat: no-repeat;
  background-position: calc(100% - 10px) 15px;
  line-height: 4rem;
@@ -1277,8 +1277,8 @@ input.datepicker {
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
- width: 34px;
- height: 34px;
+ width: 7px;
+ height: 12px;
  top: 0;
  border: none;
  cursor: pointer;
@@ -1302,15 +1302,24 @@ input.datepicker {
 .ui-datepicker .ui-datepicker-prev .ui-icon,
 .ui-datepicker .ui-datepicker-next .ui-icon {
  position: static;
- width: 34px;
- height: 34px;
+ width: 7px;
+ height: 12px;
  margin: 0;
+ background-size: 220% auto;
+ background-repeat: no-repeat;
 }
 .ui-datepicker .ui-datepicker-prev .ui-icon {
- background: url(/images/btn_prev.png) no-repeat 0 0;
+ margin-left: 240px;
+ background-image: url('/img/main/main_visual_arrow.png');
+ background-position:0 0;
 }
 .ui-datepicker .ui-datepicker-next .ui-icon {
- background: url(/images/btn_next.png) no-repeat 0 0;
+ background-image: url('/img/main/main_visual_arrow.png');
+ background-position:100% 0;
+}
+.ui-datepicker .ui-datepicker-prev .ui-icon:hover,
+.ui-datepicker .ui-datepicker-next .ui-icon:hover {
+    background-position-y: bottom;
 }
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
@@ -2240,27 +2249,6 @@ h3 + .tbl-h {
   font-size: 1.3rem;
   line-height: 1.8rem;
  }
-
- /* Icon */
- .ico-file {
-  background: url(/images/ico_mobile_iconset.png) no-repeat -9px -78px;
-  background-size: 360px auto;
- }
- .ico-warning {
-  background: url(/images/ico_mobile_iconset.png) no-repeat -78px -76px;
-  background-size: 360px auto;
- }
- .ico-new {
-  background: url(/images/ico_mobile_iconset.png) no-repeat -53px -76px;
-  background-size: 360px auto;
- }
- .ico-lock {
-  width: 20px;
-  height: 20px;
-  background: url(/images/ico_mobile_iconset.png) no-repeat -28px -76px;
-  background-size: 360px auto;
- }
-
  /* Button Group */
  .btn-grp {
   padding: 20px 0 0;
@@ -2434,14 +2422,6 @@ h3 + .tbl-h {
   position: static;
   margin-top: 10px;
   float: right;
- }
-
- /* Info box */
- .info-box {
-  padding: 15px;
- }
- .info-box.mbtype {
-  margin-bottom: 30px;
  }
 
  /* Table */
