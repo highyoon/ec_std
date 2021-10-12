@@ -75,6 +75,18 @@ var all_menu = function () {
         }
     });
 }
+
+//breadcrumbs
+jQuery(document).ready(function(){  
+	jQuery(".breadcrumbs ul li.depth_1 a").click(function(){  
+		jQuery(this).toggleClass('down').next(".category-menu").stop().slideToggle(500);
+    });  
+});
+jQuery(document).ready(function(){  
+	jQuery(".breadcrumbs ul li.depth_2 a").click(function(){  
+		jQuery(this).toggleClass('down2').next(".category-menu").stop().slideToggle(500);
+    });  
+});
 // btn_top
 var top_scroll_func = function() {
     $('body').scroll(function() {
