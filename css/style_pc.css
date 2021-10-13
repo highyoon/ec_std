@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+.for-pc {display: block !important;}
+.for-mobile {display: none !important;}
 /* main */
 .main-slide {
     position: relative;
     height:630px;
+    background:url('/img/main/main_slide01.png') no-repeat center;
 }
 .main-slide::after {
     content:'';
@@ -74,6 +77,9 @@
     padding: 0;
     cursor: pointer;
 }
+.main-slide .visual-box .slide-dots li:nth-child(n+4) {
+    display: none !important;
+}
 .main-slide .visual-box .slide-dots li a {
     display:block;
     width:100%;
@@ -110,10 +116,10 @@
     background-color:transparent;
     background-image:url('/img/main/main_visual_arrow.png')
 }
-.main-slide .visual-box .slick-prev{
+.main-slide .visual-box .slick-prev {
     left: -9.34%;
 }
-.main-slide .visual-box .slick-next{
+.main-slide .visual-box .slick-next {
     right: -9.34%;
     background-position: top right;
 }
@@ -121,19 +127,17 @@
     background-position-y: bottom;
 }
 .main-slide .visual-box .play-ctrl {
-    position:absolute;
     top:50%;
-    left:50%;
     margin:38px 0 0 -413px;
     width:50px;
     height:50px;
-    text-indent:-9999em;
-    font-size: 0;
-    border:1px solid #e6e6e6;
-    border-radius:50%;
-    background-color:transparent;
-    background-image:url('/img/main/main_visual_auto.png');
     background-position: -2px;
+}
+.main-slide .visual-box .play-ctrl.c-1 {
+    margin-left:-534px
+}
+.main-slide .visual-box .play-ctrl.c-2 {
+    margin-left:-474px
 }
 .main-slide .visual-box .play-ctrl.play {
     background-position: -54px;
@@ -394,7 +398,7 @@
 /* 메인 하단배너 */
 .main-banner {
     position: relative;
-    padding:80px;
+    /* padding:80px; */
 }
 .main-banner::after {
     content: '';
@@ -403,14 +407,12 @@
     left:0;
     width: 100%;
     height: 100%;
-    background:url('/img/main/bg_banner.png') no-repeat center;
     background-size:cover;
     z-index: -2;
 }
 .main-banner .wrap {
-
 }
-.main-banner .banner-cont {
+/* .main-banner .banner-cont {
     position: relative;
     margin-top:15px;
 }
@@ -442,18 +444,25 @@
     height: 23px;
     background:url('/img/common/bg_sprite.png') no-repeat 0 0;
 
+} */
+.main-banner .for-pc {
+    position: relative;
+    z-index: -2;
 }
-.main-banner .banner-cont .detail {
-    margin-top:8px;
+.main-banner .detail {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:50px 0 0 -600px;
 }
-.main-banner .banner-cont .detail a {
+.main-banner .detail a {
     position: relative;
     display: inline-block;
     padding:0 5px;
     font-weight: bold;
     color: #111;
 }
-.main-banner .banner-cont .detail a::after
+.main-banner .detail a::after
 {
     content: '';
     position: absolute;
@@ -508,5 +517,9 @@ a.btn-ico, button.btn-ico, span.btn-ico {
     }
     .center-news .wrap .main-calendar {
         margin:33px auto 16px;
+    }
+    .main-banner .detail {
+        left:0;
+        margin-left:0;
     }
 }

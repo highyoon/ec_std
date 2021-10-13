@@ -11,7 +11,6 @@
 
 /* main */
 .main-slide {
-    background:url('/img/main/main_slide01.png') no-repeat center;
     background-size: cover;
 }
 .main-slide .visual-box .visual-cont {
@@ -87,7 +86,6 @@
 }
 .main-slide .visual-box .play-ctrl {
     position:absolute;
-    top:50%;
     left:50%;
     text-indent:-9999em;
     font-size: 0;
