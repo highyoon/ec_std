@@ -87,6 +87,179 @@ pre button {
     right: 1em;
 }
 
+
+.h-group:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    border-bottom: 4px solid #a2dbdf;
+   }
+   .h-group .logo {
+    float: left;
+    margin: 30px 0 0 20px;
+   }
+   .h-group h1 {
+    float: left;
+    margin: 30px !important;
+    padding-left: 40px;
+    border-left: 2px solid #ccc;
+    font-size: 34px;
+   }
+   .util {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+   }
+   .util a {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #a2dbdf;
+    line-height: 26px;
+    font-weight: bold;
+    color: #fff;
+   }
+   #container {
+    padding: 0 30px 30px;
+   }
+   .work-info > h2,
+   .notice-info > h2,
+   .status-icon > h2,
+   .status-info > h2,
+   .guide-info > h2 {
+    margin: 60px 0 15px;
+    padding: 0 10px;
+    border-left: 4px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333d47;
+   }
+   .work-info,
+   .notice-info,
+   .guide-info {
+    margin: 30px 0 0 0;
+   }
+   .work-info li,
+   .notice-info li {
+    padding: 0 10px;
+   }
+   .work-info li:before,
+   .notice-info li:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    left: -10px;
+    top: 11px;
+    border-color: transparent #444;
+    border-style: solid;
+    border-width: 4px 0 5px 5px;
+   }
+   .status > span {
+    display: inline-block;
+    padding: 0 7px;
+    line-height: 18px;
+    border-radius: 10px;
+    background-color: #000;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+   }
+   .status > span.und {
+    background-color: #8d8d8d;
+   }
+   .status > span.del {
+    background-color: #cf0000;
+   }
+   .status > span.ing {
+    background-color: #249b00;
+   }
+   .status > span.done {
+    background-color: #0084c8;
+   }
+   .status > span.new {
+    background-color: #ff8854;
+   }
+   .status > span.update {
+    background-color: #ffd200;
+   }
+   .status em {
+    display: inline-block;
+    margin: 0 10px 0 5px;
+   }
+   
+   .status-info .total-count {
+    margin: 25px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0084c8;
+   }
+   .status-info .total-count em {
+    display: inline-block;
+    margin-left: 5px;
+    font-style: italic;
+    color: #999;
+   }
+   .status-tbl {
+    width: 100%;
+    table-layout: fixed;
+    border: 0 none;
+   }
+   .status-tbl caption {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+   }
+   .status-tbl tbody tr:hover {
+    background-color: #e8f0ff;
+   }
+   .status-tbl thead tr th,
+   .status-tbl tbody tr td {
+    padding: 12px 5px;
+   }
+   .status-tbl thead tr th {
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    border-color: #000;
+    background-color: #333;
+    color: #fff;
+   }
+   .status-tbl tbody tr td {
+    padding: 10px;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    border-color: #ccc;
+    line-height: 18px;
+    vertical-align: top;
+   }
+   .status-tbl tbody tr td:first-child {
+    border-left: 0;
+   }
+   /*.status-tbl tbody tr:nth-child(even) td {background: #f2f2f2;}*/
+   .status-tbl tbody tr.delete td,
+   .status-tbl tbody tr.delete td a {
+    color: #ddd !important;
+   }
+   .status-tbl tbody tr td.no,
+   .status-tbl tbody tr td.status,
+   .status-tbl tbody tr td.publisher {
+    text-align: center;
+   }
+   .status-tbl tbody tr td strong {
+    margin-right: 5px;
+   }
+   .status-tbl tbody tr td a {
+    cursor: pointer;
+   }
+   .status-tbl tbody tr .file-name a {
+    color: #0084c8;
+   }
+   
+   
+
+
 .guide-tit {
  margin-bottom: 15px;
  font-size: 34px;
@@ -117,4 +290,13 @@ ul.guide-desc {
  overflow: hidden;
  margin: 15px 0;
 }
-
+#work-footer {
+    width: 100%;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 10px 0;
+    background-color: #a2dbdf;
+    background-image: none;
+    color: #fff;
+    text-align: center;
+   }
