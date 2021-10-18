@@ -216,11 +216,17 @@
 .top-area {
     height:200px;
 }
+.top-area.edu {
+    background-image:url('/img/common/toparea_edu.gif');
+}
 .top-area.file {
     background-image:url('/img/common/toparea_file.gif');
 }
 .top-area.news {
     background-image:url('/img/common/toparea_news.gif');
+}
+.top-area.faq {
+    background-image:url('/img/common/toparea_faq.gif');
 }
 .top-area .wrap {
     position: relative;

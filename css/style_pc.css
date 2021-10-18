@@ -498,6 +498,9 @@
 .section-box {
     margin-top:60px;
 }
+.section-box.first {
+    margin-top:0px;
+}
 .section-box .sec-tit {
     margin-bottom:30px;
     padding-left:23px;
@@ -643,6 +646,9 @@
 .table-box .m-board .part tr td {
     border:0 none;
     border-bottom: 1px solid #e8e8e8;
+}
+.table-box .m-board .row td {
+    padding-left:30px;
 }
 .table-box .m-board th:first-child {
     -moz-border-radius: 6px 0 0 0;
@@ -904,6 +910,74 @@ button.btn,a.btn,input[type="button"].btn {
 .detail-box .list-ctrl .date {
     margin-left:auto;
     color:#666;
+}
+
+/* tab */
+.nav {}
+.nav .nav-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin:0 -10px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav .nav-item li {
+    margin:0 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 0;
+}
+.nav .nav-item li a {
+    padding: 23px 0;
+}
+.nav .nav-item li.active a, .nav .nav-item li a:hover {
+    margin:-1px;
+}
+
+/* faq */
+.faq-list {
+    margin-top:40px;
+}
+.faq-list dl {
+    margin:10px 0;
+    font-size:1.8rem;
+}
+.faq-list dt {
+    padding:24px 70px;
+}
+.faq-list dt:before {
+   top:26px;
+   left:30px;
+   width: 20px;
+   height:20px;
+   background-position:-116px -50px;
+}
+.faq-list dt::after {
+    top:18px;
+    right:30px;
+    width: 35px;
+    height:35px;
+    background-position:-184px -38px;
+}
+.faq-list .active dt::after {
+    top:13px;
+}
+.faq-list .active dt {
+    margin:4px -1px;
+}
+.faq-list dd {
+    padding:24px 70px;
+    line-height:2.8rem;
+}
+.faq-list dd::before {
+    top:35px;
+    left:30px;
+    width: 20px;
+    height:20px;
+    background-position:-141px -50px;
 }
 
 /* ico 아이콘형 버튼 */

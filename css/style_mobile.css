@@ -842,7 +842,7 @@ button.btn,a.btn,input[type="button"].btn {
 .horizen-list li {
     position: relative;
     margin:20px 0;
-    padding:10px 10px 25% 10px;
+    padding:10px;
     border:1px solid #bcbcbc;
     border-radius: 1.5rem;
 }
@@ -875,10 +875,73 @@ button.btn,a.btn,input[type="button"].btn {
     font-size:1.4rem;
 }
 .horizen-list .list-cont .tag {
-    position: absolute;
-    bottom:5%;
-    left:10px;
-    width: 100%;
+    display: none;
+}
+
+/* tab */
+.nav {}
+.nav .nav-item {
+    margin:0 -5px;
+}
+.nav .nav-item li {
+    display: inline-block;
+    margin:5px;
+    width: calc(50% - 12px);
+    font-size: 0;
+}
+.nav .nav-item li a {
+    padding: 7px 0;
+    font-size:1.4rem;
+    font-weight: 500;
+}
+.nav .nav-item li.active a {
+    margin:-1px;
+}
+
+/* faq */
+.faq-list {
+    margin-top:40px;
+}
+.faq-list dl {
+    margin:10px 0;
+    font-size:1.4rem;
+}
+.faq-list dt {
+    padding:22px 40px;
+}
+.faq-list dt:before {
+   top:24px;
+   left:15px;
+   width: 15px;
+   height:15px;
+   background-position:-61px -39px;
+   background-size: 800px auto;
+}
+.faq-list dt::after {
+    top:18px;
+    right:10px;
+    width: 26px;
+    height:26px;
+    background-position:-94px -39px;
+    background-size: 800px auto;
+}
+.faq-list .active dt::after {
+    top:19px;
+}
+.faq-list .active dt {
+    margin:4px -1px;
+}
+.faq-list dd {
+    padding:20px 40px;
+    line-height:2.8rem;
+}
+.faq-list dd::before {
+    top:28px;
+    left:15px;
+    width: 15px;
+    height:15px;
+    background-position:-77px -39px;
+    background-size: 800px auto;
 }
 
 /* ico 아이콘형 버튼 */
@@ -954,5 +1017,12 @@ a.btn-ico, button.btn-ico, span.btn-ico,span.ico {
         margin-top:10px;
         font-size: 1.8rem;
         height:auto;
+    }
+    .horizen-list .list-cont .tag {
+        display: block;
+        position: absolute;
+        bottom:5%;
+        left:10px;
+        width: 100%;
     }
 }

@@ -177,10 +177,10 @@ var layer_Pop = function() {
 
 //Accodion
 var acco_list = function() {       
-    $(document).on('click','.acco-wrap > ul > li > a', function() {
-        $(this).parent().siblings().find('.cont-area').slideUp();
-        $(this).parent().siblings().find('.tit-area').removeClass('active');
-        $(this).toggleClass('active');
+    $(document).on('click','.faq-list dt', function() {
+        $(this).parent().siblings().find('dd').slideUp();
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().toggleClass('active');
         $(this).next().slideToggle();
     });
 }
