@@ -324,11 +324,38 @@
 .section-box .section {
 
 }
-
+.section-box .round-box {
+    border-radius: 3.5rem;
+    border:1px dotted #bde6e8;
+    background:#e8f9fa;
+}
 .half-box {
 
 }
 .half-box > div {
+}
+
+.half-box.info  {
+    border-bottom:1px dashed #e9e9e9;
+}
+.half-box.info:first-child  {
+    padding-top:0;
+}
+.half-box.info > div {
+}.half-box.info  {
+
+}
+.half-box.info:nth-child(2n)  {
+    flex-direction: row-reverse;
+}
+.half-box.info h4 {
+    color:#2f8188;
+}
+.half-box.info .txt {
+    color:#666;
+}
+.half-box.info .btn {
+
 }
 /* table */
 .table-box {
@@ -489,6 +516,55 @@
 .horizen-list .list-txt {
     color:#666;
 }
+/* search */
+.s-result {
+}
+.s-result .s-head {
+    border-radius: 7px;
+    border:2px solid #b1e0e8;
+    background:#e7f9f9;
+}
+.s-result ul {
+}
+.s-result li {
+    display:flex;
+    flex-wrap:nowrap;
+    border-bottom:1px solid #e8e8e8;
+}
+.s-result li .date {
+    margin-left:auto;
+    color:#666;
+}
+.s-result li .key-word {
+    color:red;
+    vertical-align: top;
+}
+
+.no-result {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding:170px 0;
+    text-align: center;
+    border:1px solid #e8e8e8;
+    border-radius: 8px;
+}
+.no-result .empty {
+    width:220px;
+    font-size:2.4rem;
+}
+.no-result .empty .thumb {
+    display: block;
+    margin:0 auto 20px;
+    width:110px;
+    height:110px;
+    text-indent:-9999em;
+    background:url('/img/common/bg_sprite.png') no-repeat;
+    background-position:0 -136px ;
+}
+
 /* badge */
 .info-badge {
     display: inline-block;
@@ -600,7 +676,6 @@ button.btn,a.btn,input[type="button"].btn {
     display: inline-block;
     border: 1px solid transparent;
     background-color: #fff;
-
     color: #333;
 }
 .btn.small {
@@ -621,10 +696,10 @@ button.btn,a.btn,input[type="button"].btn {
 }
 .btn.strong {
     color:#fff;
-    background:#2e8187;
+    background:#2f8188;
 }
 .btn.strong:hover {
-    background:#227178;
+    background:#237178;
 }
 .btn.dark {
     color:#fff;
@@ -632,6 +707,15 @@ button.btn,a.btn,input[type="button"].btn {
 }
 .btn.dark:hover {
     background:#444;
+}
+.btn.direct {
+    color:#111;
+    border:1px solid transparent;
+    background:#a2dbdf;
+}
+.btn.direct:hover {
+    border:1px solid transparent;
+    background:#237178;
 }
 
 /* ico 아이콘형 버튼 */

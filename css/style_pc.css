@@ -527,6 +527,20 @@
 }
 
 
+.section-box .round-box {
+    margin:36px 0 -28px;
+    padding:10px 0;
+    font-size:1.5rem;
+    letter-spacing: -0.02rem;
+    text-align: center;
+}
+.section-box .round-box.solo {
+    padding:50px 0 35px;
+    font-size:2.4rem;
+}
+.section-box .round-box b {
+    vertical-align: top;
+}
 .half-box {
     display: flex;
     flex-wrap: nowrap;
@@ -536,6 +550,48 @@
     margin:0 10px;
 }
 
+.half-box.info  {
+    padding:30px 0 50px;
+}
+.half-box.info:first-child  {
+    padding-top:0;
+}
+.half-box.info > div {
+    margin:0 20px;
+    width:calc(50% - 20px);
+}.half-box.info  {
+
+}
+.half-box.info:nth-child(2n)  {
+    flex-direction: row-reverse;
+}
+.half-box.info:nth-child(2n) .txt {
+   text-align: right;
+}
+.half-box.info:nth-child(2n) .btn-box {
+    text-align: right;
+ }
+ .half-box.info:nth-child(2n) .btn-box .btn {
+    margin-right: 0;
+ }
+.half-box.info .img-box {
+    border-radius: 2.5rem;
+}
+.half-box.info h4 {
+    margin-top:20px;
+    font-size:3.6rem;
+}
+.half-box.info .txt {
+    margin-top:40px;
+    line-height:3.2rem;
+    font-size:1.8rem;
+}
+.half-box.info .btn-box {
+    text-align: left;
+}
+.half-box.info .btn-box .btn {
+    margin-left:0;
+}
 /* table */
 .table-box {
     margin-top:30px;
@@ -774,6 +830,25 @@
     line-height: 1.4;
     font-size:1.8rem;
 }
+
+/* search */
+.s-result {
+    margin-top:55px;
+}
+.s-result .s-head {
+    margin-top:20px;
+    padding:22px 27px;
+}
+.s-result ul {
+    margin-bottom:20px;
+}
+.s-result li {
+    padding:22px 27px;
+}
+.s-result li .date {
+}
+.s-result li .key-word {
+}
 /* button */
 .btn-box {
     margin-top:40px;
@@ -801,6 +876,11 @@ button.btn,a.btn,input[type="button"].btn {
 .btn.round {
     padding:0 53px;
     border-radius:3.5rem;
+}
+.btn.direct {
+    font-size:1.6rem;
+    font-weight: 500;
+    border-radius: 1rem;
 }
 
 /* 자료실 */
@@ -1022,6 +1102,12 @@ a.btn-ico, button.btn-ico, span.btn-ico,span.ico {
     width:24px;
     height:24px;
     background-position:-357px -9px;
+}
+.ico.ico-arrow {
+    margin:-4px 0 0 15px;
+    width:7px;
+    height:12px;
+    background-position:-230px -50px;  
 }
 
 

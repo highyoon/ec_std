@@ -219,6 +219,9 @@
 .top-area.edu {
     background-image:url('/img/common/toparea_edu.gif');
 }
+.top-area.support {
+    background-image:url('/img/common/toparea_support.gif');
+}
 .top-area.file {
     background-image:url('/img/common/toparea_file.gif');
 }
@@ -227,6 +230,9 @@
 }
 .top-area.faq {
     background-image:url('/img/common/toparea_faq.gif');
+}
+.top-area.search {
+    background-image:url('/img/common/toparea_search.gif');
 }
 .top-area .wrap {
     position: relative;

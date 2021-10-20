@@ -532,6 +532,25 @@ img {width:100%;}
 .half-box > div {
     margin-top:10px;
 }
+
+.half-box.info  {
+}
+.half-box.info:first-child  {
+}
+.half-box.info > div {
+}.half-box.info  {
+
+}
+.half-box.info:nth-child(2n)  {
+}
+.half-box.info h4 {
+}
+.half-box.info .txt {
+
+}
+.half-box.info .btn {
+
+}
 /* table */
 .table-box {
     margin-top:20px;
@@ -942,6 +961,25 @@ button.btn,a.btn,input[type="button"].btn {
     height:15px;
     background-position:-77px -39px;
     background-size: 800px auto;
+}
+
+/* search */
+.s-result {
+    margin-top:55px;
+}
+.s-result .s-head {
+    margin-top:20px;
+    padding:22px 27px;
+}
+.s-result ul {
+    margin-bottom:20px;
+}
+.s-result li {
+    padding:22px 27px;
+}
+.s-result li .date {
+}
+.s-result li .key-word {
 }
 
 /* ico 아이콘형 버튼 */
