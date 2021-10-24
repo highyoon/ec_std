@@ -3,6 +3,7 @@
 img {width:100%;}
 .for-pc {display: none !important;}
 .for-mobile {display: block !important;}
+.m-block {display: block;}
 
 #gnb {
     display:none;
@@ -275,6 +276,9 @@ img {width:100%;}
     font-size: 1.1rem;
     font-weight: 300;
     padding: 0 3px;
+    width:16px;
+    height:16px;
+    line-height:16px;
 }
 .main .news .news-cont .news-list .news-detail {
     margin-top:13px;
@@ -501,6 +505,9 @@ img {width:100%;}
 .section-box {
     margin-top:30px;
 }
+.section-box.first {
+    margin-top:0;
+}
 .section-box .sec-tit {
     margin-bottom:20px;
     padding-left:23px;
@@ -526,6 +533,9 @@ img {width:100%;}
 .section-box .section {
     margin-top:40px;
 }
+.section-box .round-box {
+    padding:10px 19px;
+}
 .half-box {
 
 }
@@ -538,19 +548,123 @@ img {width:100%;}
 .half-box.info:first-child  {
 }
 .half-box.info > div {
-}.half-box.info  {
-
+}
+.half-box.info {
+    position: relative;
+    border:0 none;
 }
 .half-box.info:nth-child(2n)  {
 }
 .half-box.info h4 {
+    margin-bottom:10px;
+    font-size: 2rem;
+}
+.half-box.info .img-box {
+
 }
 .half-box.info .txt {
-
+    margin-top: 10px;
+    font-size: 1.6rem;
+    line-height:2.4rem;
+}
+.half-box.info .btn-box {
+    text-align: left;
 }
 .half-box.info .btn {
-
+    margin:0 10px 40px 0;
 }
+/* 인사말 */
+.greeting-box {}
+.greeting-box .g-tit {
+    font-size:2rem;
+}
+.greeting-box .txt {
+    margin-top:20px;
+    line-height:2.2rem;
+    font-size:1.6rem;
+}
+/* 조직도 */
+.org-list {}
+.org-list .org-box {
+}
+.org-list .org-box > ul {}
+.org-list .org-box li {
+   
+}
+.org-list .org-box ul > li > span {
+    
+}
+.org-list .org-box .mid-org {
+    
+}
+.org-list .org-box .mid-org dt, .org-list .org-box .mid-org dd {
+    
+}
+.org-list .org-box .sub-org {
+}
+.org-list .org-box .sub-org.line {
+}
+.org-list .org-box .half > ul {
+}
+.org-list .org-box .half > ul > li {
+}
+/* map */
+.map-box {}
+.map-box .map-area {
+    height:188px;
+}
+.map-box .map-area .root_daum_roughmap {
+}
+.map-box .loaction-info {
+    margin-top:15px;
+}
+.map-box .loaction-info dl {
+    font-size:1.6rem;
+}
+.map-box .loaction-info dt {
+    min-width: 21%;
+    padding-right:10px;
+    height:20px;
+}
+.map-box .loaction-info dd {
+}
+.map-box .traffic-box {
+    margin-top:30px;
+}
+.map-box .traffic-box .half-box {}
+.map-box .traffic-box .half-box > div {
+}
+.map-box .traffic-box .half-box h4 {
+    padding:15px 20px;
+    font-size:2rem;
+}
+.map-box .traffic-box .half-box h4 .ico {
+    margin-left:auto;
+}
+.map-box .traffic-box .detail-info {
+    padding:0 20px 0;
+}
+.map-box .traffic-box dl {
+    margin:20px 0;
+}
+.map-box .traffic-box dl:last-child {
+    border:0 none;
+}
+.map-box .traffic-box .car-info dl {
+}
+.map-box .traffic-box dt {
+    margin-bottom:17px;
+    font-size:1.4rem;
+}
+.map-box .traffic-box dd {
+    margin-bottom:20px;
+    line-height:2rem;
+    font-size:1.4rem;
+}
+.map-box .traffic-box dd li {
+    margin-bottom: 10px;
+}
+
 /* table */
 .table-box {
     margin-top:20px;
@@ -964,20 +1078,32 @@ button.btn,a.btn,input[type="button"].btn {
 }
 
 /* search */
+.search-tit {
+    margin: 20px 0 10px;
+    font-size:1.8rem;
+}
 .s-result {
-    margin-top:55px;
+    margin-top:50px;
 }
 .s-result .s-head {
-    margin-top:20px;
-    padding:22px 27px;
+    padding:15px 0;
+    font-size:1.6rem;
+}
+.s-result .s-head .btn-ico {
+   display: none;
 }
 .s-result ul {
     margin-bottom:20px;
 }
 .s-result li {
-    padding:22px 27px;
+    padding:15px 10px;
+}
+.s-result li .info-badge {
+    display: none;
 }
 .s-result li .date {
+    display: block;
+    text-align: right;
 }
 .s-result li .key-word {
 }
@@ -988,10 +1114,10 @@ a.btn-ico, button.btn-ico, span.btn-ico,span.ico {
     height:34px;
     background-size: 800px 800px;
 }
-.btn-ico.main-more {
+/* .btn-ico.main-more {
     margin-left:13px; 
     background-position:-184px 0;
-}
+} */
 .ico.ico-file {
     margin-left:8px;  
     width:12px;
@@ -1015,6 +1141,23 @@ a.btn-ico, button.btn-ico, span.btn-ico,span.ico {
     height:21px;
     background-position:-38px -40px;
 }
+.ico.ico-arrow {
+    margin-left:15px;
+    width:5px;
+    height:9px;
+    background-position:-114px -24px;
+}
+.ico.ico-car {
+    width:35px;
+    height:32px;
+    background-position:-59px -68px;
+}
+.ico.ico-bus {
+    width:31px;
+    height:32px;
+    background-position:-95px -68px;
+}
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

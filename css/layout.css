@@ -231,6 +231,9 @@
 .top-area.faq {
     background-image:url('/img/common/toparea_faq.gif');
 }
+.top-area.intro {
+    background-image:url('/img/common/toparea_intro.gif');
+}
 .top-area.search {
     background-image:url('/img/common/toparea_search.gif');
 }

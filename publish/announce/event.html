@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="탈북청소년 교육지원센터" />
+    <link type="text/css" rel="stylesheet" href="/css/libs/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pignose.calendar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/libs/yearpicker.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/libs/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/js/libs/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/js/libs/slick.min.js"></script>    
+    <script type="text/javascript" src="/js/libs/main.js"></script>
+    <script type="text/javascript" src="/js/libs/yearpicker.js"></script>
+    <script type="text/javascript" src="/js/ui.js"></script>    
+    <!--[if lt IE 9]>
+        <script src="/js/html5.js"></script>
+        <script src="/js/respond.min.js"></script>
+    <![endif]-->
+    <title>탈북청소년 교육지원센터-뉴스레터</title>
+    <script type="text/javascript">
+        $(function () {
+            //Responsive        
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Include -->
+    <section class="header-include"></section>    
+    <!-- Header Include -->
+    
+    <!-- Container -->
+    <section id="container" class="contents">
+        <div class="top-area news">
+            <div class="wrap">
+                <h3 class="sub-tit">알림 / 소식</h3>
+                <div class="sub-util">
+                    <ul>
+                        <li class="print">
+                            <a href="#none">프린트</a>
+                        </li>
+                        <li class="copy">
+                            <a href="#none">복사</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lnb-box">
+            <div class="wrap">
+                <ul class="lnb-menu">
+                    <li class="home">
+                        <a href="#none">
+                            <span class>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">알림 / 소식</a>
+                        <div class="sub-depth">
+                            <ul>
+                                <li>
+                                    <a href="#none">탈북학생 교육</a>
+                                </li>
+                                <li>
+                                    <a href="#none">지원 사업 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#none">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="#none">자주 묻는 질문	</a>
+                                </li>
+                                <li>
+                                    <a href="#none">센터 소개</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">행사 / 일정</a>
+                        <div class="sub-depth">
+                            <ul>
+                                <li>
+                                    <a href="#none">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#none">활동 소식</a>
+                                </li>
+                                <li>
+                                    <a href="#none">뉴스레터</a>
+                                </li>
+                                <li>
+                                    <a href="#none">유관기관 소식</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont-box">
+            <div class="wrap calendar">
+                <div id='calendar'></div>
+                <div class="calendar-list">
+                  <h2></h2>
+                  <ul></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Container -->
+
+    <!-- Footer Include -->
+    <section class="footer-include"></section>    
+    <!-- //Footer Include -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var date = new Date();
+        var year = date.getFullYear();  
+        var month = date.getMonth()+1;
+        var initBool = true;
+        var weekDay = ['일','월','화','수','목','금','토']
+        
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'ko',
+            showNonCurrentDates: true,
+            contentHeight: 720,
+            initialView: 'dayGridMonth',
+            headerToolbar: {
+            left: '',
+            right: 'today', 
+            center: 'prev Year Month next',
+            },
+            dayCellContent: function(date) {
+            var $this = $(date.el);
+            var dayNumberReplace = date.dayNumberText.replace('일', '');
+            date.dayNumberText = dayNumberReplace;
+            },
+            customButtons: {
+            Year: {
+                text: '',
+                click: function() {
+                
+                }
+            },
+            Month: {
+                text: '',
+                click: function() {
+                
+                }
+            },
+            today: {
+                text: '오늘',
+                click: function() {
+                calendar.today();
+                }
+            }
+            },
+            titleFormat: function(date) {
+            var $yBtn = $('button.fc-Year-button'),
+                $mBtn = $('button.fc-Month-button'),
+                yVal = `${date.date.year}`,
+                mVal = `${date.date.month + 1}`;
+            
+            function setBtnTxt(a, b) {
+                $yBtn.html('<span>'+a+'</span>년').attr('title', a);
+                $mBtn.html('<span>'+b+'</span>월').attr('title', b);
+            }
+            
+            if( initBool ) {
+                setTimeout(function(){
+                $('button.fc-Year-button').html('<span>'+yVal+'</span>년').attr('title', yVal);
+                $('button.fc-Month-button').html('<span>'+mVal+'</span>월').attr('title', mVal);
+                initBool = false;
+                }, 10);
+            }
+            return setBtnTxt( yVal, mVal );
+            },
+            events: [
+            {
+                title: '겨울방학 특강-1',
+                start: '2021-10-04',
+                end: '2021-10-04',
+                color: '#378006'
+            }, {
+                title: '겨울방학 특강-2',
+                start: '2021-10-05',
+                end: '2021-10-05',
+                color: '#000000'
+            }, {
+                title: '지구과학-1',
+                start: '2021-10-11',
+                end: '2021-10-11',
+                color: '#6b2fad'
+            }, {
+                title: '지구과학-2',
+                start: '2021-10-11',
+                end: '2021-10-11',
+                color: '#e12cad'
+            }, {
+                title: '지구과학-3',
+                start: '2021-10-12',
+                end: '2021-10-12',
+                color: '#1b2fad'
+            }, {
+                title: '스포츠개론',
+                start: '2021-10-13',
+                end: '2021-10-13',
+                color: '#bd25b8'
+            }, {
+                title: '세계지리',
+                start: '2021-10-14',
+                end: '2021-10-14',
+                color: '#b53737'
+            }, {
+                title: '인공지능수학-1',
+                start: '2021-10-14',
+                end: '2021-10-14',
+                color: '#1659ad'
+            }, {
+                title: '인공지능수학-2',
+                start: '2021-10-14',
+                end: '2021-10-14',
+                color: '#1659ad'
+            }, {
+                title: '인공지능수학-3',
+                start: '2021-10-14',
+                end: '2021-10-14',
+                color: '#1659ad'
+            }, {
+                title: '인공지능수학-4',
+                start: '2021-10-14',
+                end: '2021-10-14',
+                color: '#1659ad'
+            }, {
+                title: 'Today init',
+                start: '2021-10-21',
+                end: '2021-10-21',
+                color: '#b9f'
+            }, {
+                title: '이틀이상 날짜 설정',
+                start: '2021-10-25',
+                end: '2021-10-30',
+                color: '#1659ad'
+            }
+            ],
+            dayMaxEventRows: true,
+            moreLinkContent: function(args){
+                return '+'+args.num;
+            },
+            dateClick: function(info) {
+            $('.fc-daygrid-day').removeClass('active');
+            $(info.dayEl).addClass('active');
+            
+            var dateStr = info.dateStr.replace(/-/g, '');
+            var eventSource = [];
+            var eventSourceArr = [];
+            var currentEvent = [];
+            eventSource = calendar.getEventSources();
+            eventSourceArr = eventSource[0].internalEventSource.meta;
+            
+            $.each(eventSourceArr, function (key, value) {
+                var sDate = value.start.replace(/-/g, '');
+                var eDate = value.end.replace(/-/g, '');
+                
+                if( dateStr >= sDate && dateStr <= eDate-1 || dateStr === sDate || dateStr === eDate ) {
+                currentEvent.push({
+                    'title': value.title,
+                    'start': value.start,
+                    'end': value.end
+                });
+                }
+            });
+            
+            $('.calendar-list ul').html('');
+            $.each(currentEvent, function(key, value){
+                var appendStr = '<li>'+
+                                    value.title +
+                                '</li>';
+                $('.calendar-list ul').append(appendStr);
+            });
+            
+            $('.calendar-list h2').text(info.dateStr+'('+weekDay[info.date.getDay()]+')'); 
+            },
+            viewDidMount: function(info, el) {
+            var initDate = calendar.getDate();
+            var initYear = initDate.getFullYear();
+            var initMonth = ('0'+ (initDate.getMonth() + 1) ).slice(-2);
+            var initDay = initDate.getDate();
+            var initWeek = weekDay[initDate.getDay()]
+            var today = initYear+'-'+initMonth+'-'+initDay+'('+ initWeek+')';
+            var dateStr = initYear+initMonth+initDay;
+            var eventSource = [];
+            var eventSourceArr = [];
+            var currentEvent = [];
+            eventSource = calendar.getEventSources();
+            eventSourceArr = eventSource[0].internalEventSource.meta;
+            
+            $.each(eventSourceArr, function (key, value) {
+                var sDate = value.start.replace(/-/g, '');
+                var eDate = value.end.replace(/-/g, '');
+                
+                if( dateStr >= sDate && dateStr <= eDate-1 || dateStr === sDate || dateStr === eDate ) {
+                currentEvent.push({
+                    'title': value.title,
+                    'start': value.start,
+                    'end': value.end
+                });
+                }
+            });
+            
+            $('.calendar-list ul').html('');
+            $.each(currentEvent, function(key, value){
+                var appendStr = '<li>'+
+                                    value.title +
+                                '</li>';
+                $('.calendar-list ul').append(appendStr);
+            });
+            $('.calendar-list h2').text(today);
+            }
+        });
+
+        calendar.render();
+        
+        var monthGet = function(){
+            var calD = calendar.getDate();
+            var calMon = calD.getMonth() + 1;
+            var monthSlice = ('0' + calMon).slice(-2);
+            return monthSlice;
+        }
+        
+        var yearPicker = function(){
+            $('.fc-Year-button').yearpicker({
+            onChange: function(value){
+                calendar.gotoDate( value +'-'+ monthGet() ); 
+            }
+            });
+        }
+        
+        setTimeout(function(){
+            yearPicker();
+        }, 10);
+        
+        
+        // Monthpicker 
+        var monthPickerTemplate = `
+            <div class="yearpicker-container monthpicker">
+            <div class="yearpicker-header">
+                <div class="yearpicker-current" data-view="yearpicker-current"></div>
+            </div>
+            <div class="yearpicker-body">
+                <ul class="yearpicker-year" data-view="years"></ul>
+            </div>
+            </div>
+        `;
+        
+        var monthPickerRepeat = function(){
+            $('.fc-Month-button').after(monthPickerTemplate);
+            for(i=1; i<=12; i++) {
+            $('.monthpicker .yearpicker-year').append('<li class="yearpicker-items" data-view="yearpicker-items">'+i+'</li>');
+            }
+        }
+        monthPickerRepeat();
+        
+        $(document).on('click', function(e){
+            let target = e.target;
+            if(e.target.classList.contains('yearpicker-items')) {
+            $('.monthpicker').hide();
+            } else if ( e.target.classList.contains('fc-Month-button') || $(target).closest('.monthpicker').length > 0 ) {
+            var calMon = calendar.getDate().getMonth() + 1;
+            $('.monthpicker .yearpicker-header').text(calMon);
+            $('.monthpicker .yearpicker-items').removeClass('selected').each(function(i, v){
+                if( calMon === (i+1) ) {
+                $(this).addClass('selected');
+                }
+            });
+            $('.monthpicker').show();
+            } else {
+            $('.monthpicker').hide();
+            }
+        });
+        
+        $(document).on('click', '.monthpicker .yearpicker-items', function(e){
+            var thisText = $(this).text();
+            var calD = calendar.getDate();
+            var calYear = calD.getFullYear();
+            var monthSlice = ('0' + thisText).slice(-2);
+
+            calendar.gotoDate( calYear +'-'+ monthSlice );
+            $('.monthpicker').hide();
+        });
+        
+        $(window).resize(function(){
+            if( $(this).width() <= 768 ) {
+            calendar.setOption('contentHeight', 320);
+            //calendar.changeView('listMonth');
+            } else {
+                calendar.setOption('contentHeight', 750);
+            calendar.changeView('dayGridMonth');
+            }
+        }).resize();
+        
+        });
+    </script>
+</body>
+
+</html>

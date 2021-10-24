@@ -1376,7 +1376,7 @@ a.ui-button:active,
 }
 .ui-datepicker table > tbody > tr > td:first-child.ui-datepicker-week-end .ui-state-default.ui-state-active,
 .ui-datepicker table > tbody > tr > td:last-child.ui-datepicker-week-end .ui-state-default.ui-state-active {
- color: #fff;
+/* color: #fff; */
 }
 
 /* Table */
