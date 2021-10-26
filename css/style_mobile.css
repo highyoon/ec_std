@@ -216,7 +216,7 @@ img {width:100%;}
     height:24px;
 }
 .main .news .main-more, .center-news .main-more {
-    background:url('/img/main/main_more_m.png');
+    background:url('../img/main/main_more_m.png');
     background-size: 24px;
 }
 .main .news .news-tab {
@@ -291,7 +291,7 @@ img {width:100%;}
 
 .center-news {
     padding:48px 20px 38px; 
-    background-image:url('/img/main/bg_center_m.png');
+    background-image:url('../img/main/bg_center_m.png');
     background-size: cover;
 }
 .center-news .center-act .center-info {
@@ -421,7 +421,7 @@ img {width:100%;}
     left:0;
     width:100%;
     height:100%;
-    background:url('/img/main/bg_banner_m.png') no-repeat center bottom;
+    background:url('../img/main/bg_banner_m.png') no-repeat center bottom;
     background-size: 100% auto;
     z-index:-2;
 }
@@ -495,7 +495,7 @@ img {width:100%;}
 .search-box .btn_search {
     width: 22px;
     height:22px;
-    background:url('/img/common/btn_search.png') no-repeat center;
+    background:url('../img/common/btn_search.png') no-repeat center;
 }
 
 .cont-box {
@@ -517,11 +517,30 @@ img {width:100%;}
     padding-left:16px;
     background-size:800px auto;
 }
+.section-box .round-box.inline {
+    padding:10px 20px;
+    font-size:1.6rem;
+    font-weight:500;
+}
 .section-box .sec-txt {
     margin-bottom:30px;
     line-height: 2.4rem;
     font-size:1.6rem;
     color:#666;
+}
+.section-box .sec-txt .import {
+    display: inline-block;
+}
+.section-box .sec-txt .import::after {
+    content: '';
+    position: absolute;
+    top:13px;
+    left:0;
+    width: 100%;
+    height:10px;
+    border-radius: 2.5rem;
+    background:#a2dbdf;
+    z-index:-1;
 }
 .section-box .caution {
     margin:10px 0 0 10px;
@@ -589,10 +608,51 @@ img {width:100%;}
 }
 .org-list .org-box > ul {}
 .org-list .org-box li {
-   
+  margin-bottom:8px;
+}
+.org-list .org-box > ul > li {
+    margin-bottom:20px;
 }
 .org-list .org-box ul > li > span {
-    
+    padding:15px 20px;
+    font-size:1.6rem;
+}
+.org-list .org-box ul > .line03 span {
+    margin-left:60%;
+}
+.org-list .org-box ul > .line06 {
+    margin-top:30px;
+}
+.org
+.org-list .org-box li::after {
+    content:"";
+    position: absolute;
+    background:#d5d6d8;
+}
+.org-list .org-box .line01::after {
+    bottom:-232px;
+    left:50%;
+   width:1px;
+   height:232px;
+}
+
+.org-list .org-box .line01::before {
+    display:none;
+}
+.org-list .org-box .line02::before {
+    display:none;
+}
+.org-list .org-box .line02::after {
+    bottom: -50px;
+    left: 50%;
+    width: 30%;
+    height: 1px;
+}
+.org-list .org-box .line03::after {
+    display:none;
+}
+.org-list .org-box .line03::before {
+    display:none;
 }
 .org-list .org-box .mid-org {
     
@@ -606,7 +666,11 @@ img {width:100%;}
 }
 .org-list .org-box .half > ul {
 }
-.org-list .org-box .half > ul > li {
+.table-box.org table td .s-bullet li {
+    padding-left:30px;
+    text-indent:-24px;
+    list-style: disc;
+    list-style-position: inside;
 }
 /* map */
 .map-box {}
@@ -739,6 +803,41 @@ img {width:100%;}
 .table-box .m-board.solo {
     margin-top:20px;
 }
+.table-box .m-board .st th::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 2px;
+    height:calc(100% + 3px);
+    background: #2f8188;
+}
+/* 탈북학생 개념정의 모바일테이블 */
+.table-box .m-board.m-line, 
+.table-box .m-board.m-line thead, 
+.table-box .m-board.m-line tbody, 
+.table-box .m-board.m-line th, 
+.table-box .m-board.m-line td, 
+.table-box .m-board.m-line tr { 
+    display: block; 
+}
+.table-box .m-board.m-line th {
+    line-height:50px;
+    border:0 none;
+    border-bottom:1px solid #b1e2e5;
+}
+.table-box .m-board.m-line thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.table-box .m-board.m-line .row td { 
+    border: none;
+    position: relative;
+    white-space: normal;
+    text-align:center;
+}
+
 .table-box .m-board th {
     height:50px;
     border: 1px solid #b1e2e5;
@@ -750,7 +849,7 @@ img {width:100%;}
     border:1px solid #e8e8e8;
 }
 .table-box .m-board .part tr {
-    background:url('/img/common/bg_tr_arrow.png') no-repeat center;
+    background:url('../img/common/bg_tr_arrow.png') no-repeat center;
 }
 
 /* button */
@@ -1086,11 +1185,14 @@ button.btn,a.btn,input[type="button"].btn {
     margin-top:50px;
 }
 .s-result .s-head {
-    padding:15px 0;
+    position: relative;
+    padding:15px 38px 15px 0;
     font-size:1.6rem;
 }
 .s-result .s-head .btn-ico {
-   display: none;
+   position: absolute;
+   top:13px;
+   right:0;
 }
 .s-result ul {
     margin-bottom:20px;
@@ -1156,6 +1258,11 @@ a.btn-ico, button.btn-ico, span.btn-ico,span.ico {
     width:31px;
     height:32px;
     background-position:-95px -68px;
+}
+.btn-ico.main-more {
+    width:25px;
+    height:25px;
+    background-position:-128px -70px;
 }
 
 
