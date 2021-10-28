@@ -50,18 +50,12 @@ img {width:100%;}
     text-align:center;
     padding:0 20px;
 }
-.main-slide .visual-box .visual-cont .slide-tit {
-    padding:0 20px;
-}
-.main-slide .visual-box .visual-cont .slide-txt {
-   margin-top:9px;
-    font-size: 1.2rem;
-   color:#666;
-}
 .main-slide .visual-box .visual-cont .slide-detail {
-    position: relative;
-    display: inline-block;
-    margin-top:20px;
+    position: absolute;
+    top:17%;
+    left:50%;
+    margin-top:10px;
+    margin-left:-40px;
     padding:0 5px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -78,12 +72,10 @@ img {width:100%;}
     z-index:-1;
 }
 .main-slide .visual-box .visual-cont .slide-img {
-    margin-top:25px;
-    padding:0 25px 12px;
 }
 .main-slide .visual-box .visual-cont .slide-img img {
-    border-radius: 3.5rem;
-    box-shadow: 9px 5px 12px 0px rgba(0, 0, 0, 0.1);
+    /* border-radius: 3.5rem;
+    box-shadow: 9px 5px 12px 0px rgba(0, 0, 0, 0.1); */
 }
 /* dot */
 .main-slide .visual-box .slide-dots {
@@ -513,6 +505,9 @@ img {width:100%;}
     padding-left:23px;
     font-size:1.8rem;
 }
+.section-box .sec-tit.sm {
+    background-position: 0 8px;
+}
 .section-box .sec-sub-tit {
     padding-left:16px;
     background-size:800px auto;
@@ -591,6 +586,56 @@ img {width:100%;}
 }
 .half-box.info .btn {
     margin:0 10px 40px 0;
+}
+/* 단계별 교육 절차 */
+.edu-step-box {
+}
+.edu-step-box .step-wrap {}
+.edu-step-box .edu-step {}
+.edu-step-box .tit-box {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.edu-step-box .edu-step dl {
+    margin-bottom:30px;
+    padding:20px;
+    font-size: 1.8rem;
+}
+.edu-step-box .edu-step dt {
+    padding:12px 0;
+}
+.edu-step-box .edu-step dd {
+    margin-top:20px;
+    padding:12px 0;
+}
+.edu-step-box .edu-step .first {
+  
+}
+.edu-step-box .edu-step .first dt {
+    
+}
+.edu-step-box .edu-step .first dd {
+    
+}
+.edu-step-box .edu-step.ele .second {
+    display:none;
+}
+.edu-step-box .edu-step .second dt {
+    
+}
+.edu-step-box .edu-step .second dd {
+    
+}
+.edu-step-box .edu-step .third {
+    
+}
+.edu-step-box .edu-step .third dt {
+   
+}
+.edu-step-box .edu-step .third dd {
+   
 }
 /* 인사말 */
 .greeting-box {}

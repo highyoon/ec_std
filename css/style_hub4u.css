@@ -16,11 +16,7 @@
 .main-slide .visual-box .visual-cont {
     position: relative;
 }
-.main-slide .visual-box .visual-cont .slide-txt {
-   color:#666;
-}
 .main-slide .visual-box .visual-cont .slide-detail {
-    position: relative;
     display: inline-block;
     color:#111;
 }
@@ -366,6 +362,56 @@
 .half-box.info .btn {
 
 }
+/* 단계별 교육 절차 */
+.edu-step-box {
+    position: relative;
+}
+.edu-step-box .step-wrap {}
+.edu-step-box .edu-step {
+    text-align: center;
+}
+.edu-step-box .edu-step dl {
+    color:#fff;
+}
+.edu-step-box .edu-step dt {
+    border-radius: 5rem;
+}
+.edu-step-box .edu-step dd {
+    color:#333;
+    border-radius: 1rem;
+    border:2px solid #fff;
+}
+.edu-step-box .edu-step dd > span {
+    display: block;
+}
+.edu-step-box .edu-step .first {
+    background:#e8f9fa;
+}
+.edu-step-box .edu-step .first dt {
+    background:#2f8188;
+}
+.edu-step-box .edu-step .first dd {
+    background:#bee4e6;
+}
+.edu-step-box .edu-step .second {
+    background:#e8f4fa;
+}
+.edu-step-box .edu-step .second dt {
+    background:#2f6588;
+}
+.edu-step-box .edu-step .second dd {
+    background:#c5deec;
+}
+.edu-step-box .edu-step .third {
+    background:#e8eefa;
+}
+.edu-step-box .edu-step .third dt {
+    background:#3e4185;
+}
+.edu-step-box .edu-step .third dd {
+    background:#c8d5f0;
+}
+
 /* 인사말 */
 .greeting-box {}
 .greeting-box .g-tit {
@@ -529,6 +575,12 @@
 
 .table-box .title .b-tit {
 
+}
+.table-box .table-list {
+}
+.table-box .table-list .c-txt {
+    vertical-align: top;
+    color:#2f8188;
 }
 /* 테이블 조직도 */
 .table-box.org {

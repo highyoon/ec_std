@@ -6,18 +6,9 @@
 .main-slide {
     position: relative;
     height:630px;
-    background:url('../img/main/main_slide01.png') no-repeat center;
-}
-.main-slide::after {
-    content:'';
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:url('../img/main/main_slide01.png') no-repeat center;
-    background-size: cover;
-    z-index: -2;
+    background-image:url('../img/main/main_slide01.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .main-slide .visual-box {
     padding:50px 0;
@@ -26,18 +17,9 @@
     position: relative;
     min-height: 530px;
 }
-.main-slide .visual-box .visual-cont .slide-tit {
-    margin-top:68px;
-}
-.main-slide .visual-box .visual-cont .slide-txt {
-   margin-top:20px;
-    font-size: 2.3rem;
-   color:#666;
-}
 .main-slide .visual-box .visual-cont .slide-detail {
     position: relative;
-    display: inline-block;
-    margin-top:40px;
+    margin-top:220px;
     font-size: 2rem;
     color:#111;
 }
@@ -506,6 +488,14 @@
     padding-left:23px;
     font-size:2.4rem;
 }
+.section-box .sec-tit.sm {
+    line-height: 3.2rem;
+    font-weight: 300;
+    background-position: 0 10px;
+}
+.section-box .sec-tit.sm b {
+    vertical-align: top;
+}
 .section-box .sec-sub-tit {
     padding-left:16px;
 }
@@ -606,6 +596,89 @@
 }
 .half-box.info .btn-box .btn {
     margin-left:0;
+}
+/* 단계별 교육 절차 */
+.edu-step-box {
+    margin:40px 0 80px;
+}
+.edu-step-box .step-wrap {
+    padding:0 60px 0 260px;
+}
+.edu-step-box .edu-step {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.edu-step-box .tit-box { 
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-top:-174px;
+    padding:52px 80px;
+    width: 100%;
+    font-size:2.4rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    border:2px dotted #b1e2e5;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.edu-step-box .tit-box.last {
+    margin-top:-14px;
+    padding:134px 90px;
+} 
+.edu-step-box .edu-step dl {
+    margin-left:20px;
+    padding:30px 20px;
+    width: 33%;
+    min-height:277px;
+    border-radius: 1rem;
+}
+.edu-step-box .edu-step dt {
+    margin:0 20px;
+    padding:22px 10px;
+    font-size:2.2rem;
+    border-radius: 50px;
+}
+.edu-step-box .edu-step dd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    padding:27px 0;
+    font-size:1.8rem;
+}
+.edu-step-box .edu-step dd > span {
+    width: 100%;
+    font-size:1.6rem;
+}
+.edu-step-box .edu-step .first {
+}
+.edu-step-box .edu-step.middle dt {
+    display:none;
+}
+.edu-step-box .edu-step.middle dl {
+    margin-top:-90px;
+    padding-bottom:55px;
+}
+.edu-step-box .edu-step.middle .first dd,
+.edu-step-box .edu-step.middle .third dd {
+    margin-top:120px;
+}
+.edu-step-box .edu-step .second {
+}
+.edu-step-box .edu-step .second dt {
+}
+.edu-step-box .edu-step.ele .second dd {
+    display:none;
+}
+.edu-step-box .edu-step .third {
+}
+.edu-step-box .edu-step .third dt {
+}
+.edu-step-box .edu-step .third dd {
 }
 /* 인사말 */
 .greeting-box {}
@@ -885,6 +958,16 @@
     text-overflow: ellipsis;
     overflow:hidden;
     white-space: nowrap;
+}
+
+.table-box .table-list {
+    margin-top:8px;
+}
+.table-box .table-list .c-txt {
+    margin-left:8px;
+}
+.table-box .table-list .txt {
+    margin-left:12px;
 }
 /* 테이블 조직도 */
 .table-box.org {
