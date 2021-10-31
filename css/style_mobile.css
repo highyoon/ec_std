@@ -587,8 +587,388 @@ img {width:100%;}
 .half-box.info .btn {
     margin:0 10px 40px 0;
 }
+/* 탈북학생 현황 */
+.graph-box {
+    padding:75px 50px 50px 80px;
+    border:1px solid #ddd;
+    border-radius: 15px;
+}
+
+.chart-wrapper ul li {
+    margin:0 10px;
+    padding:22px 0 16px;
+    width: 210px;
+    text-align: center;
+    background:url('/img/common/bg_graph_body.png') repeat-y center;
+}
+.chart-wrapper ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:-40px;
+    width: 21px;
+    height:100%;
+    background: url('/img/common/bg_graph_top.png') no-repeat center;
+    transform: rotate(90deg);
+}
+.chart-wrapper ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:-0;
+    left:-20px;
+    right:0;
+    width: 38px;
+    height: 100%;
+    background: url('/img/common/bg_graph_bottom.png') no-repeat center;
+    transform: rotate(90deg);
+}
+.chart-wrapper ul li span {
+    color:#333;
+}
+.chart-wrapper ul li .count {
+    position: absolute;
+    top:-40px;
+    left:0;
+    right:0;
+}
+.chart-wrapper ul li .year {
+    position: absolute;
+    bottom:-40px;
+    left:0;
+    right:0;
+}
+
+
+.bar-chart {
+  position: relative;
+  min-width: 21px;
+  min-height: 322px;
+  padding: 0;
+  margin: 0;
+}
+
+.bar-chart .chart-column,
+.bar-chart [data-cp-size] {
+  position: relative;
+}
+.bar-chart {
+  clear: both;
+}
+.bar-chart .container {
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.bar-chart .container [data-cp-size="0"] {
+    width: 0%;
+  }
+  .bar-chart .container [data-cp-size="1"] {
+    width: 1%;
+  }
+  .bar-chart .container [data-cp-size="2"] {
+    width: 2%;
+  }
+  .bar-chart .container [data-cp-size="3"] {
+    width: 3%;
+  }
+  .bar-chart .container [data-cp-size="4"] {
+    width: 4%;
+  }
+  .bar-chart .container [data-cp-size="5"] {
+    width: 5%;
+  }
+  .bar-chart .container [data-cp-size="6"] {
+    width: 6%;
+  }
+  .bar-chart .container [data-cp-size="7"] {
+    width: 7%;
+  }
+  .bar-chart .container [data-cp-size="8"] {
+    width: 8%;
+  }
+  .bar-chart .container [data-cp-size="9"] {
+    width: 9%;
+  }
+  .bar-chart .container [data-cp-size="10"] {
+    width: 10%;
+  }
+  .bar-chart .container [data-cp-size="11"] {
+    width: 11%;
+  }
+  .bar-chart .container [data-cp-size="12"] {
+    width: 12%;
+  }
+  .bar-chart .container [data-cp-size="13"] {
+    width: 13%;
+  }
+  .bar-chart .container [data-cp-size="14"] {
+    width: 14%;
+  }
+  .bar-chart .container [data-cp-size="15"] {
+    width: 15%;
+  }
+  .bar-chart .container [data-cp-size="16"] {
+    width: 16%;
+  }
+  .bar-chart .container [data-cp-size="17"] {
+    width: 17%;
+  }
+  .bar-chart .container [data-cp-size="18"] {
+    width: 18%;
+  }
+  .bar-chart .container [data-cp-size="19"] {
+    width: 19%;
+  }
+  .bar-chart .container [data-cp-size="20"] {
+    width: 20%;
+  }
+  .bar-chart .container [data-cp-size="21"] {
+    width: 21%;
+  }
+  .bar-chart .container [data-cp-size="22"] {
+    width: 22%;
+  }
+  .bar-chart .container [data-cp-size="23"] {
+    width: 23%;
+  }
+  .bar-chart .container [data-cp-size="24"] {
+    width: 24%;
+  }
+  .bar-chart .container [data-cp-size="25"] {
+    width: 25%;
+  }
+  .bar-chart .container [data-cp-size="26"] {
+    width: 26%;
+  }
+  .bar-chart .container [data-cp-size="27"] {
+    width: 27%;
+  }
+  .bar-chart .container [data-cp-size="28"] {
+    width: 28%;
+  }
+  .bar-chart .container [data-cp-size="29"] {
+    width: 29%;
+  }
+  .bar-chart .container [data-cp-size="30"] {
+    width: 30%;
+  }
+  .bar-chart .container [data-cp-size="31"] {
+    width: 31%;
+  }
+  .bar-chart .container [data-cp-size="32"] {
+    width: 32%;
+  }
+  .bar-chart .container [data-cp-size="33"] {
+    width: 33%;
+  }
+  .bar-chart .container [data-cp-size="34"] {
+    width: 34%;
+  }
+  .bar-chart .container [data-cp-size="35"] {
+    width: 35%;
+  }
+  .bar-chart .container [data-cp-size="36"] {
+    width: 36%;
+  }
+  .bar-chart .container [data-cp-size="37"] {
+    width: 37%;
+  }
+  .bar-chart .container [data-cp-size="38"] {
+    width: 38%;
+  }
+  .bar-chart .container [data-cp-size="39"] {
+    width: 39%;
+  }
+  .bar-chart .container [data-cp-size="40"] {
+    width: 40%;
+  }
+  .bar-chart .container [data-cp-size="41"] {
+    width: 41%;
+  }
+  .bar-chart .container [data-cp-size="42"] {
+    width: 42%;
+  }
+  .bar-chart .container [data-cp-size="43"] {
+    width: 43%;
+  }
+  .bar-chart .container [data-cp-size="44"] {
+    width: 44%;
+  }
+  .bar-chart .container [data-cp-size="45"] {
+    width: 45%;
+  }
+  .bar-chart .container [data-cp-size="46"] {
+    width: 46%;
+  }
+  .bar-chart .container [data-cp-size="47"] {
+    width: 47%;
+  }
+  .bar-chart .container [data-cp-size="48"] {
+    width: 48%;
+  }
+  .bar-chart .container [data-cp-size="49"] {
+    width: 49%;
+  }
+  .bar-chart .container [data-cp-size="50"] {
+    width: 50%;
+  }
+  .bar-chart .container [data-cp-size="51"] {
+    width: 51%;
+  }
+  .bar-chart .container [data-cp-size="52"] {
+    width: 52%;
+  }
+  .bar-chart .container [data-cp-size="53"] {
+    width: 53%;
+  }
+  .bar-chart .container [data-cp-size="54"] {
+    width: 54%;
+  }
+  .bar-chart .container [data-cp-size="55"] {
+    width: 55%;
+  }
+  .bar-chart .container [data-cp-size="56"] {
+    width: 56%;
+  }
+  .bar-chart .container [data-cp-size="57"] {
+    width: 57%;
+  }
+  .bar-chart .container [data-cp-size="58"] {
+    width: 58%;
+  }
+  .bar-chart .container [data-cp-size="59"] {
+    width: 59%;
+  }
+  .bar-chart .container [data-cp-size="60"] {
+    width: 60%;
+  }
+  .bar-chart .container [data-cp-size="61"] {
+    width: 61%;
+  }
+  .bar-chart .container [data-cp-size="62"] {
+    width: 62%;
+  }
+  .bar-chart .container [data-cp-size="63"] {
+    width: 63%;
+  }
+  .bar-chart .container [data-cp-size="64"] {
+    width: 64%;
+  }
+  .bar-chart .container [data-cp-size="65"] {
+    width: 65%;
+  }
+  .bar-chart .container [data-cp-size="66"] {
+    width: 66%;
+  }
+  .bar-chart .container [data-cp-size="67"] {
+    width: 67%;
+  }
+  .bar-chart .container [data-cp-size="68"] {
+    width: 68%;
+  }
+  .bar-chart .container [data-cp-size="69"] {
+    width: 69%;
+  }
+  .bar-chart .container [data-cp-size="70"] {
+    width: 70%;
+  }
+  .bar-chart .container [data-cp-size="71"] {
+    width: 71%;
+  }
+  .bar-chart .container [data-cp-size="72"] {
+    width: 72%;
+  }
+  .bar-chart .container [data-cp-size="73"] {
+    width: 73%;
+  }
+  .bar-chart .container [data-cp-size="74"] {
+    width: 74%;
+  }
+  .bar-chart .container [data-cp-size="75"] {
+    width: 75%;
+  }
+  .bar-chart .container [data-cp-size="76"] {
+    width: 76%;
+  }
+  .bar-chart .container [data-cp-size="77"] {
+    width: 77%;
+  }
+  .bar-chart .container [data-cp-size="78"] {
+    width: 78%;
+  }
+  .bar-chart .container [data-cp-size="79"] {
+    width: 79%;
+  }
+  .bar-chart .container [data-cp-size="80"] {
+    width: 80%;
+  }
+  .bar-chart .container [data-cp-size="81"] {
+    width: 81%;
+  }
+  .bar-chart .container [data-cp-size="82"] {
+    width: 82%;
+  }
+  .bar-chart .container [data-cp-size="83"] {
+    width: 83%;
+  }
+  .bar-chart .container [data-cp-size="84"] {
+    width: 84%;
+  }
+  .bar-chart .container [data-cp-size="85"] {
+    width: 85%;
+  }
+  .bar-chart .container [data-cp-size="86"] {
+    width: 86%;
+  }
+  .bar-chart .container [data-cp-size="87"] {
+    width: 87%;
+  }
+  .bar-chart .container [data-cp-size="88"] {
+    width: 88%;
+  }
+  .bar-chart .container [data-cp-size="89"] {
+    width: 89%;
+  }
+  .bar-chart .container [data-cp-size="90"] {
+    width: 90%;
+  }
+  .bar-chart .container [data-cp-size="91"] {
+    width: 91%;
+  }
+  .bar-chart .container [data-cp-size="92"] {
+    width: 92%;
+  }
+  .bar-chart .container [data-cp-size="93"] {
+    width: 93%;
+  }
+  .bar-chart .container [data-cp-size="94"] {
+    width: 94%;
+  }
+  .bar-chart .container [data-cp-size="95"] {
+    width: 95%;
+  }
+  .bar-chart .container [data-cp-size="96"] {
+    width: 96%;
+  }
+  .bar-chart .container [data-cp-size="97"] {
+    width: 97%;
+  }
+  .bar-chart .container [data-cp-size="98"] {
+    width: 98%;
+  }
+  .bar-chart .container [data-cp-size="99"] {
+    width: 99%;
+  }
+  .bar-chart .container [data-cp-size="100"] {
+    width: 100%;
+  }
 /* 단계별 교육 절차 */
 .edu-step-box {
+    padding:0 20px;
 }
 .edu-step-box .step-wrap {}
 .edu-step-box .edu-step {}

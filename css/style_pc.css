@@ -597,12 +597,415 @@
 .half-box.info .btn-box .btn {
     margin-left:0;
 }
+/* 탈북학생 현황 */
+.graph-box {
+    padding:75px 50px 50px 80px;
+    border:1px solid #ddd;
+    border-radius: 15px;
+}
+
+.chart-wrapper ul li {
+    margin:0 10px;
+    padding:22px 0 16px;
+    width: 210px;
+    text-align: center;
+    background:url('/img/common/bg_graph_body.png') repeat-y center;
+}
+.chart-wrapper ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:-20px;
+    left:0;
+    right:0;
+    width: 100%;
+    height:22px;
+    background: url('/img/common/bg_graph_top.png') no-repeat center;
+}
+.chart-wrapper ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:-16px;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 16px;;
+    background: url('/img/common/bg_graph_bottom.png') no-repeat center;
+}
+.chart-wrapper ul li span {
+    color:#333;
+}
+.chart-wrapper ul li .count {
+    position: absolute;
+    top:-40px;
+    left:0;
+    right:0;
+}
+.chart-wrapper ul li .year {
+    position: absolute;
+    bottom:-40px;
+    left:0;
+    right:0;
+}
+
+
+.bar-chart {
+  position: relative;
+  min-width: 21px;
+  min-height: 322px;
+  padding: 0;
+  margin: 0;
+}
+.bar-chart .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 100px;
+}
+.bar-chart .chart-column,
+.bar-chart [data-cp-size] {
+  flex-grow: 1;
+  align-self: flex-end;
+}
+.bar-chart .chart-column,
+.bar-chart [data-cp-size] {
+  color: #ffffff;
+  list-style: none;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  position: relative;
+}
+.bar-chart .container [data-cp-size="0"] {
+    height: 0%;
+  }
+  .bar-chart .container [data-cp-size="1"] {
+    height: 1%;
+  }
+  .bar-chart .container [data-cp-size="2"] {
+    height: 2%;
+  }
+  .bar-chart .container [data-cp-size="3"] {
+    height: 3%;
+  }
+  .bar-chart .container [data-cp-size="4"] {
+    height: 4%;
+  }
+  .bar-chart .container [data-cp-size="5"] {
+    height: 5%;
+  }
+  .bar-chart .container [data-cp-size="6"] {
+    height: 6%;
+  }
+  .bar-chart .container [data-cp-size="7"] {
+    height: 7%;
+  }
+  .bar-chart .container [data-cp-size="8"] {
+    height: 8%;
+  }
+  .bar-chart .container [data-cp-size="9"] {
+    height: 9%;
+  }
+  .bar-chart .container [data-cp-size="10"] {
+    height: 10%;
+  }
+  .bar-chart .container [data-cp-size="11"] {
+    height: 11%;
+  }
+  .bar-chart .container [data-cp-size="12"] {
+    height: 12%;
+  }
+  .bar-chart .container [data-cp-size="13"] {
+    height: 13%;
+  }
+  .bar-chart .container [data-cp-size="14"] {
+    height: 14%;
+  }
+  .bar-chart .container [data-cp-size="15"] {
+    height: 15%;
+  }
+  .bar-chart .container [data-cp-size="16"] {
+    height: 16%;
+  }
+  .bar-chart .container [data-cp-size="17"] {
+    height: 17%;
+  }
+  .bar-chart .container [data-cp-size="18"] {
+    height: 18%;
+  }
+  .bar-chart .container [data-cp-size="19"] {
+    height: 19%;
+  }
+  .bar-chart .container [data-cp-size="20"] {
+    height: 20%;
+  }
+  .bar-chart .container [data-cp-size="21"] {
+    height: 21%;
+  }
+  .bar-chart .container [data-cp-size="22"] {
+    height: 22%;
+  }
+  .bar-chart .container [data-cp-size="23"] {
+    height: 23%;
+  }
+  .bar-chart .container [data-cp-size="24"] {
+    height: 24%;
+  }
+  .bar-chart .container [data-cp-size="25"] {
+    height: 25%;
+  }
+  .bar-chart .container [data-cp-size="26"] {
+    height: 26%;
+  }
+  .bar-chart .container [data-cp-size="27"] {
+    height: 27%;
+  }
+  .bar-chart .container [data-cp-size="28"] {
+    height: 28%;
+  }
+  .bar-chart .container [data-cp-size="29"] {
+    height: 29%;
+  }
+  .bar-chart .container [data-cp-size="30"] {
+    height: 30%;
+  }
+  .bar-chart .container [data-cp-size="31"] {
+    height: 31%;
+  }
+  .bar-chart .container [data-cp-size="32"] {
+    height: 32%;
+  }
+  .bar-chart .container [data-cp-size="33"] {
+    height: 33%;
+  }
+  .bar-chart .container [data-cp-size="34"] {
+    height: 34%;
+  }
+  .bar-chart .container [data-cp-size="35"] {
+    height: 35%;
+  }
+  .bar-chart .container [data-cp-size="36"] {
+    height: 36%;
+  }
+  .bar-chart .container [data-cp-size="37"] {
+    height: 37%;
+  }
+  .bar-chart .container [data-cp-size="38"] {
+    height: 38%;
+  }
+  .bar-chart .container [data-cp-size="39"] {
+    height: 39%;
+  }
+  .bar-chart .container [data-cp-size="40"] {
+    height: 40%;
+  }
+  .bar-chart .container [data-cp-size="41"] {
+    height: 41%;
+  }
+  .bar-chart .container [data-cp-size="42"] {
+    height: 42%;
+  }
+  .bar-chart .container [data-cp-size="43"] {
+    height: 43%;
+  }
+  .bar-chart .container [data-cp-size="44"] {
+    height: 44%;
+  }
+  .bar-chart .container [data-cp-size="45"] {
+    height: 45%;
+  }
+  .bar-chart .container [data-cp-size="46"] {
+    height: 46%;
+  }
+  .bar-chart .container [data-cp-size="47"] {
+    height: 47%;
+  }
+  .bar-chart .container [data-cp-size="48"] {
+    height: 48%;
+  }
+  .bar-chart .container [data-cp-size="49"] {
+    height: 49%;
+  }
+  .bar-chart .container [data-cp-size="50"] {
+    height: 50%;
+  }
+  .bar-chart .container [data-cp-size="51"] {
+    height: 51%;
+  }
+  .bar-chart .container [data-cp-size="52"] {
+    height: 52%;
+  }
+  .bar-chart .container [data-cp-size="53"] {
+    height: 53%;
+  }
+  .bar-chart .container [data-cp-size="54"] {
+    height: 54%;
+  }
+  .bar-chart .container [data-cp-size="55"] {
+    height: 55%;
+  }
+  .bar-chart .container [data-cp-size="56"] {
+    height: 56%;
+  }
+  .bar-chart .container [data-cp-size="57"] {
+    height: 57%;
+  }
+  .bar-chart .container [data-cp-size="58"] {
+    height: 58%;
+  }
+  .bar-chart .container [data-cp-size="59"] {
+    height: 59%;
+  }
+  .bar-chart .container [data-cp-size="60"] {
+    height: 60%;
+  }
+  .bar-chart .container [data-cp-size="61"] {
+    height: 61%;
+  }
+  .bar-chart .container [data-cp-size="62"] {
+    height: 62%;
+  }
+  .bar-chart .container [data-cp-size="63"] {
+    height: 63%;
+  }
+  .bar-chart .container [data-cp-size="64"] {
+    height: 64%;
+  }
+  .bar-chart .container [data-cp-size="65"] {
+    height: 65%;
+  }
+  .bar-chart .container [data-cp-size="66"] {
+    height: 66%;
+  }
+  .bar-chart .container [data-cp-size="67"] {
+    height: 67%;
+  }
+  .bar-chart .container [data-cp-size="68"] {
+    height: 68%;
+  }
+  .bar-chart .container [data-cp-size="69"] {
+    height: 69%;
+  }
+  .bar-chart .container [data-cp-size="70"] {
+    height: 70%;
+  }
+  .bar-chart .container [data-cp-size="71"] {
+    height: 71%;
+  }
+  .bar-chart .container [data-cp-size="72"] {
+    height: 72%;
+  }
+  .bar-chart .container [data-cp-size="73"] {
+    height: 73%;
+  }
+  .bar-chart .container [data-cp-size="74"] {
+    height: 74%;
+  }
+  .bar-chart .container [data-cp-size="75"] {
+    height: 75%;
+  }
+  .bar-chart .container [data-cp-size="76"] {
+    height: 76%;
+  }
+  .bar-chart .container [data-cp-size="77"] {
+    height: 77%;
+  }
+  .bar-chart .container [data-cp-size="78"] {
+    height: 78%;
+  }
+  .bar-chart .container [data-cp-size="79"] {
+    height: 79%;
+  }
+  .bar-chart .container [data-cp-size="80"] {
+    height: 80%;
+  }
+  .bar-chart .container [data-cp-size="81"] {
+    height: 81%;
+  }
+  .bar-chart .container [data-cp-size="82"] {
+    height: 82%;
+  }
+  .bar-chart .container [data-cp-size="83"] {
+    height: 83%;
+  }
+  .bar-chart .container [data-cp-size="84"] {
+    height: 84%;
+  }
+  .bar-chart .container [data-cp-size="85"] {
+    height: 85%;
+  }
+  .bar-chart .container [data-cp-size="86"] {
+    height: 86%;
+  }
+  .bar-chart .container [data-cp-size="87"] {
+    height: 87%;
+  }
+  .bar-chart .container [data-cp-size="88"] {
+    height: 88%;
+  }
+  .bar-chart .container [data-cp-size="89"] {
+    height: 89%;
+  }
+  .bar-chart .container [data-cp-size="90"] {
+    height: 90%;
+  }
+  .bar-chart .container [data-cp-size="91"] {
+    height: 91%;
+  }
+  .bar-chart .container [data-cp-size="92"] {
+    height: 92%;
+  }
+  .bar-chart .container [data-cp-size="93"] {
+    height: 93%;
+  }
+  .bar-chart .container [data-cp-size="94"] {
+    height: 94%;
+  }
+  .bar-chart .container [data-cp-size="95"] {
+    height: 95%;
+  }
+  .bar-chart .container [data-cp-size="96"] {
+    height: 96%;
+  }
+  .bar-chart .container [data-cp-size="97"] {
+    height: 97%;
+  }
+  .bar-chart .container [data-cp-size="98"] {
+    height: 98%;
+  }
+  .bar-chart .container [data-cp-size="99"] {
+    height: 99%;
+  }
+  .bar-chart .container [data-cp-size="100"] {
+    height: 100%;
+  }
 /* 단계별 교육 절차 */
 .edu-step-box {
     margin:40px 0 80px;
 }
 .edu-step-box .step-wrap {
+    position: relative;
     padding:0 60px 0 260px;
+}
+.edu-step-box .step-wrap::after {
+    content: '';
+    position: absolute;
+    top:190px;
+    left:60px;
+    display: block;
+    width: 100%;
+    height: 365px;
+    background:url('/img/common/bg_step_line.png') no-repeat;
+    background-size: 100%;
+    z-index: 1;
 }
 .edu-step-box .edu-step {
     position: relative;
@@ -663,9 +1066,12 @@
     margin-top:-90px;
     padding-bottom:55px;
 }
-.edu-step-box .edu-step.middle .first dd,
-.edu-step-box .edu-step.middle .third dd {
+.edu-step-box .edu-step.middle .first dd {
     margin-top:120px;
+}
+
+.edu-step-box .edu-step.middle .third dd {
+    margin-top:134px;
 }
 .edu-step-box .edu-step .second {
 }
@@ -679,6 +1085,7 @@
 .edu-step-box .edu-step .third dt {
 }
 .edu-step-box .edu-step .third dd {
+    margin-top:62px;
 }
 /* 인사말 */
 .greeting-box {}
