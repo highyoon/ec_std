@@ -34,6 +34,9 @@
 #header {
     border-bottom:1px solid #eff3f6;
 }
+#header h1 {
+    margin-bottom:10px;
+}
 #header,
 #container,
 #footer {
@@ -357,6 +360,7 @@
     border:1px solid #e8e8e8;
     box-sizing: border-box;
     background:#fff;
+    z-index: 2;
 }
 
 .lnb-box lI:nth-child(3) .sub-depth, .lnb-box lI:nth-child(4) .sub-depth {
@@ -536,7 +540,29 @@
 }
 
 /* Mobile Device  */
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 660px) {
+    
+.top-area.edu {
+    background-image:url('../img/common/toparea_edu_m.gif');
+}
+.top-area.support {
+    background-image:url('../img/common/toparea_support_m.gif'); 
+}
+.top-area.file {
+    background-image:url('../img/common/toparea_file_m.gif');
+}
+.top-area.news {
+    background-image:url('../img/common/toparea_news_m.gif');
+}
+.top-area.faq {
+    background-image:url('../img/common/toparea_faq_m.gif');
+}
+.top-area.intro {
+    background-image:url('../img/common/toparea_intro_m.gif');
+}
+.top-area.search {
+    background-image:url('../img/common/toparea_search_m.gif');
+}
  .main-info-box .box {
   width: 120px;
   transition: 0.5s ease;
@@ -548,10 +574,6 @@
   height: 240px !important;
   max-height: 240px !important;
  }
-}
-/* Mobile Device  */
-@media screen and (min-width: 477px) and (max-width: 660px) {
-
 }
 
 /* Mobile Device  */
@@ -571,6 +593,7 @@
 
  #header .top-util {
     margin-top:8px;
+    display:flex;
  }
  #header .top-util a {
   display: inline-block;
@@ -581,6 +604,7 @@
   background-size:30px auto;
  }
  .top-util .gnb-search {
+    margin-right:10px;
     background-color:#2f8188;
     background-image:url('../img/common/ico_nav.png');
     background-position:0 0
@@ -688,8 +712,6 @@
 /* Top area */
 .top-area {
     height:100px;
-}
-.top-area.file {
     background-size: cover;
 }
 .top-area .wrap {

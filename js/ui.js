@@ -77,6 +77,7 @@ var all_menu = function () {
 // Lnb menu
 var lnb_menu = function() {
     $(document).on('click','.lnb-menu > li > a', function() {
+        $(this).parent().siblings().find('a').removeClass('on').next(".sub-depth").stop().slideUp(400);
         $(this).toggleClass('on').next(".sub-depth").stop().slideToggle(400);
     });
 }
@@ -95,7 +96,6 @@ var top_scroll_func = function() {
             }
         } catch(e) { }
     });
-    console.log('show');
 };
 //Top move
 var btn_top = function () {
